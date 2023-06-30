@@ -1,0 +1,155 @@
+button {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 30px;
+    padding: 15px 20px;
+    width: 80%;
+    margin: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+
+#leftbox{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    border-radius: 16px;
+    width:50%;
+    height:100%;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+h1 {
+    color: white;
+}
+
+#score{
+    color: white;
+    font-size: 70px;
+    font-weight: 800;
+}
+
+#rightbox{
+    width:50%;
+    height:100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    font-weight: bold;
+    font-size: 20px;
+    color: hsl(224, 30%, 27%);
+}
+
+.card{
+    border-radius: 16px;
+    box-shadow: 0 8px 8px 0 rgba(171, 171, 247);
+    display: flex;
+    height: 500px;
+    width: 700px;
+
+
+}
+
+#result{
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;
+
+}
+
+.bars{
+    
+    border-radius: 16px;
+    margin: 20px 0px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.reaction{
+    
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 100%, 98%);
+
+}
+#memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 98%);
+}
+#verbal{
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 98%);
+}
+#visual{
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 98%);
+}
+.numerator{
+    color: hsl(224, 30%, 27%);
+}
+.denominator{
+    color:gray
+    
+}
+
+@font-face{
+    font-family: hanken;
+    src: url(HankenGrotesk-Medium.ttf);
+}
+
+@font-face{
+    font-family: hankenbold;
+    src: url(HankenGrotesk-Bold.ttf); font-weight: bold;
+}
+
+@font-face{
+    font-family: hankenextra;
+    src: url(HankenGrotesk-ExtraBold.ttf); font-weight: bolder;
+}
+
+body{
+    font-family: hanken;
+    font-size: large;
+}
+
+img{
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+
+@media only screen and (max-width: 675px) {
+ 
+#leftbox{
+    height: auto;
+    width: 100%;
+}
+
+#rightbox{
+    height: auto;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+  }
